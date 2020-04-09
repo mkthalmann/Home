@@ -8,7 +8,7 @@ navbar:
     - text: "Teaching"
       href: teaching.html
     - text: "Research"
-      href: Research.html
+      href: research.html
     - text: "More"
       icon: fa-gear
       menu:
