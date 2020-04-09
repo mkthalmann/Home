@@ -18,9 +18,11 @@ navbar:
         - text: "SemTree"
           href: semtree.html
   right:
-    - icon: fa-envelope
+    - text: E-Mail
+      icon: fa-envelope
       href: mailto:maik.thalmann@gmail.com?subject=[GitHub]
-    - icon: fa-github
+    - text: GitHub
+      icon: fa-github
       href: https://github.com/mkthalmann
 output:
   html_document:

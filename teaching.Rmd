@@ -2,10 +2,14 @@
 title: "Teaching Materials"
 ---
 
+<a href="https://mkthalmann.github.io/inferenz/">
 <p align="center">
 <img src="media/inference.jpg" width="250">
 </p>
+</a>
 
+<a href="https://github.com/mkthalmann/TutorialNotes_HK/blob/master/recap.pdf">
 <p align="center">
 <img src="media/AS_semantik.jpg" width="250">
 </p>
+</a>
