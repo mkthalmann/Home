@@ -1,0 +1,11 @@
+---
+title: "Teaching Materials"
+---
+
+<p align="center">
+<img src="media/inference.jpg" width="250">
+</p>
+
+<p align="center">
+<img src="media/AS_semantik.jpg" width="250">
+</p>
