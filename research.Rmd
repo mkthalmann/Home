@@ -4,7 +4,7 @@ title: "Research Output"
 
 Below is a list with links to my talks, posters, and papers, with each group being sorted from newest to oldest. 
 
-## Test {.tabset .tabset-fade}
+## Selected Publications {.tabset .tabset-fade}
 
 ### Talks
 
