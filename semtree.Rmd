@@ -3,7 +3,9 @@ title: "SemTree &mdash; Automatic Generation of Type-and-Rule-Annotated qtree Tr
 author: https://github.com/mkthalmann/rule-and-type-parse
 ---
 
-> The following description is taken directly from the README of the associated Github page.
+```
+The following description is taken directly from the README of the associated Github page. 
+```
 
 This script is a very simple program that parses LaTeX [TikZ qtree](https://ctan.org/pkg/tikz-qtree?lang=en)<sup id="a1">[1](#f1)</sup> strings and outputs the same tree annotated with semantic types and the rules of composition (Heim-&-Kratzer-style) that led to that type. Being simple, the script comes with a number of restrictions some of which I'll detail below. 
 
@@ -27,10 +29,18 @@ with open("LaTeX/treeparses.tex", "w") as f:
 
 ## Examples
 
+### Single Image
+
 The input string in (1) produces the output below (once the corresponding (Xe)LaTeX code is compiled to pdf).
 
 1. `[.\\node(top){S }; [.NP^1 [.N^1 Andrew ] ] [.VP [.V hits ] [.NP^2 [.N^2 Mathis ] ] ] ]`
 
 <p align="center">
-<img src="media/semtree.jpg" width="400">
+<img src="media/images/semtree.jpg" width="400">
+</p>
+
+### Multipage PDF
+
+<p align="center">
+<img src="media/images/semtree.gif" width="800">
 </p>

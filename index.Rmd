@@ -2,6 +2,17 @@
 title: "My Website"
 ---
 
+```{r setup, include=FALSE, purl=FALSE}
+knitr::opts_chunk$set(
+    echo = FALSE,
+    cache = TRUE,
+    tidy = "styler",
+    tidy.opts = list(scope = "indention"),
+    fig.align = 'center',
+    out.width = '100%'
+)
+```
+
 :::: {style="display: flex;"}
 
 ::: {.column width="65%"}
@@ -22,7 +33,57 @@ a column separator -->
 :::
 
 ::: {.column width="20%"}
-![](media/me.jpeg)
+![](media/images/me.jpeg)
+
+```{r heartggplot, warning=FALSE, message=FALSE, cache=TRUE}
+library(tidyverse)
+library(gganimate)
+
+# generate heart data
+# modified from: https://twitter.com/odeleongt/status/1096088996915097605
+tibble(
+    t = c(seq(0, 2*pi, by = .05), 0),
+    x = 16 * sin(t)^3,
+    y = 13 * cos(t) - 5 * cos(2 * t) - 2 * cos(3 * t) - cos(4 * t)
+    ) %>%
+    mutate(
+        f1 = 1:n(),
+        f2 = f1 + 1L
+        ) %>%
+    gather(key = col, value = frame, f2, f2) %>%
+    arrange(frame, x) %>%
+    slice(-c(1, nrow(.))) -> heart
+
+# nicer plots
+cleanup = theme(axis.line.x = element_line(color = "black"),
+                axis.line.y = element_line(color = "black"),
+                panel.background = element_rect(fill = "transparent",
+                                                colour = NA),
+                panel.grid.major =  element_line(size = .2, color = "gray"),
+                panel.grid.major.x = element_blank(),
+                legend.background = element_rect(fill = "transparent"),
+                axis.title.x = element_text(vjust = -1),
+                axis.title.y = element_text(vjust = 2),
+                plot.margin = unit(c(.5,.5,.5,.5), "cm"),
+                strip.background = element_rect(colour = "black",
+                                                fill = "transparent"),
+                legend.key = element_blank()
+)
+
+# plot the animation
+plot_heart <- ggplot(heart, aes(x = x, y = y, color = frame)) +
+    geom_path(size = 2) +
+    transition_reveal(along = frame) +
+    coord_equal() +
+    scale_color_gradientn(colors = rainbow(length(heart$frame))) +
+    labs(x = "", y = "") +
+    guides(color = F) +
+    view_follow() +
+    cleanup
+
+animate(plot_heart, nframes = 50, end_pause = 10)
+```
 :::
 
 ::::
+

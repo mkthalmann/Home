@@ -332,9 +332,7 @@ $(document).ready(function () {
 </div>
 
 
-<blockquote>
-<p>The following description is taken directly from the README of the associated Github page.</p>
-</blockquote>
+<pre><code>The following description is taken directly from the README of the associated Github page. </code></pre>
 <p>This script is a very simple program that parses LaTeX <a href="https://ctan.org/pkg/tikz-qtree?lang=en">TikZ qtree</a><sup id="a1"><a href="#f1">1</a></sup> strings and outputs the same tree annotated with semantic types and the rules of composition (Heim-&amp;-Kratzer-style) that led to that type. Being simple, the script comes with a number of restrictions some of which I’ll detail below.</p>
 <p>As an aside, my implementation is the offspring of a desire to program, rather than one to innovate. There are certainly better and more thought-out alternatives around.</p>
 <p><b id="f1">1</b> For TikZ itself, see <a href="https://www.ctan.org/pkg/pgf" class="uri">https://www.ctan.org/pkg/pgf</a>. <a href="#a1">↩︎</a></p>
@@ -352,13 +350,22 @@ with open(&quot;LaTeX/treeparses.tex&quot;, &quot;w&quot;) as f:
 </div>
 <div id="examples" class="section level2">
 <h2>Examples</h2>
+<div id="single-image" class="section level3">
+<h3>Single Image</h3>
 <p>The input string in (1) produces the output below (once the corresponding (Xe)LaTeX code is compiled to pdf).</p>
 <ol style="list-style-type: decimal">
 <li><code>[.\\node(top){S }; [.NP^1 [.N^1 Andrew ] ] [.VP [.V hits ] [.NP^2 [.N^2 Mathis ] ] ] ]</code></li>
 </ol>
 <p align="center">
-<img src="media/semtree.jpg" width="400">
+<img src="media/images/semtree.jpg" width="400">
 </p>
+</div>
+<div id="multipage-pdf" class="section level3">
+<h3>Multipage PDF</h3>
+<p align="center">
+<img src="media/images/semtree.gif" width="800">
+</p>
+</div>
 </div>
 
 

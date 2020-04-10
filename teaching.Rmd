@@ -12,7 +12,7 @@ Introduction to Statistics With R:
 
 <a href="https://mkthalmann.github.io/inferenz/">
 <p align="center">
-<img src="media/inference.jpg" width="200">
+<img src="media/images/inference.jpg" width="200">
 </p>
 </a>
 
@@ -31,7 +31,7 @@ Linguistic Semantics:
 
 <a href="https://github.com/mkthalmann/TutorialNotes_HK/blob/master/recap.pdf">
 <p align="center">
-<img src="media/AS_semantik.jpg" width="200">
+<img src="media/images/AS_semantik.jpg" width="200">
 </p>
 </a>
 
@@ -56,7 +56,7 @@ a column separator -->
 Generative Syntax:
 
 <p align="center">
-<img src="media/AS_syntax.jpg" width="200">
+<img src="media/images/AS_syntax.jpg" width="200">
 </p>
 
 :::
@@ -72,7 +72,7 @@ a column separator -->
 Experiment Design and Stats: 
 
 <p align="center">
-<img src="media/stats.jpg" width="200">
+<img src="media/images/stats.jpg" width="200">
 </p>
 
 :::

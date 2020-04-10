@@ -3,7 +3,9 @@ title: "PyExp &mdash; Linguistic Experiments using tkinter and Python 3"
 author: https://github.com/mkthalmann/PyExp
 ---
 
-> The following description is taken directly from the README of the associated Github page.
+```
+The following description is taken directly from the README of the associated Github page. 
+```
 
 This is one of my ongoing side projects: an experiment script with Python 3 using tkinter. The scope of this effort is fairly limited for now:
 
@@ -19,7 +21,7 @@ This is one of my ongoing side projects: an experiment script with Python 3 usin
 ## What It Looks Like
 
 <p align="center">
-<img src="media/pyexp.jpg" width="650">
+<img src="media/images/pyexp.jpg" width="650">
 </p>
 
 ## Getting Started
