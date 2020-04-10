@@ -19,9 +19,8 @@ This is one of my ongoing side projects: an experiment script with Python 3 usin
 ## What It Looks Like
 
 <p align="center">
-<img src="https://github.com/mkthalmann/PyExp/blob/master/media/sample.jpg" width="532" height="278">
+<img src="media/pyexp.jpg" width="650">
 </p>
-
 
 ## Getting Started
 
@@ -46,10 +45,3 @@ Here are the first few lines of the results for a Forced Choice experiment, wher
 | uuvvomdbmam9fzc | 04/03/2020 | 11:46:54   | TEST   | 99  | n/a    | python   | none  | 1       | 4    | b    | opt1     | 1.14362       | F        | cool exp | 10.2     |
 
 As you can see, the results file is fairly dense and errs on the side of including too much information. I find this makes things easier in case unexpected circumstances occur or testing is done under non-ideal conditions (long stretch of time to test all participants; lots of different experimenters doing the testing, what have you).
-
-## Desiderata
-
-Below is a list of features I would like to implement in the future. While it is no guarantee that this will actually happen, the following list is supposed to hold me (somewhat) accountable.
-
-* support for video stimuli
-* option to have several experimental blocks with a break in between

@@ -32,5 +32,5 @@ The input string in (1) produces the output below (once the corresponding (Xe)La
 1. `[.\\node(top){S }; [.NP^1 [.N^1 Andrew ] ] [.VP [.V hits ] [.NP^2 [.N^2 Mathis ] ] ] ]`
 
 <p align="center">
-<img src="https://github.com/mkthalmann/semantics/blob/master/media/sample.jpg" width="448" height="490">
+<img src="media/semtree.jpg" width="400">
 </p>

@@ -2,15 +2,17 @@
 title: "Teaching Materials"
 ---
 
+### Available Online
+
 :::: {style="display: flex;"}
 
 ::: {}
 
-An Introduction to Statistics Using <i class="fab fa-r-project"></i>: 
+Introduction to Statistics With R: 
 
 <a href="https://mkthalmann.github.io/inferenz/">
 <p align="center">
-<img src="media/inference.jpg" height="300">
+<img src="media/inference.jpg" width="200">
 </p>
 </a>
 
@@ -25,13 +27,53 @@ a column separator -->
 
 ::: {}
 
-Linguistic Semantics Heim-&-Kratzer-style:
+Linguistic Semantics:
 
 <a href="https://github.com/mkthalmann/TutorialNotes_HK/blob/master/recap.pdf">
 <p align="center">
-<img src="media/AS_semantik.jpg" height="300">
+<img src="media/AS_semantik.jpg" width="200">
 </p>
 </a>
+
+:::
+
+::: {.column width="15%"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::::
+
+<br><br>
+
+### Available Upon Request
+
+:::: {style="display: flex;"}
+
+::: {}
+
+Generative Syntax:
+
+<p align="center">
+<img src="media/AS_syntax.jpg" width="200">
+</p>
+
+:::
+
+::: {.column width="15%"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {}
+
+Experiment Design and Stats: 
+
+<p align="center">
+<img src="media/stats.jpg" width="200">
+</p>
 
 :::
 
