@@ -2,14 +2,37 @@
 title: "Teaching Materials"
 ---
 
+:::: {style="display: flex;"}
+
+::: {}
+
+An Introduction to Statistics Using <i class="fab fa-r-project"></i>: 
+
 <a href="https://mkthalmann.github.io/inferenz/">
 <p align="center">
-<img src="media/inference.jpg" width="250">
+<img src="media/inference.jpg" height="300">
 </p>
 </a>
 
+:::
+
+::: {.column width="15%"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+
+::: {}
+
+Linguistic Semantics Heim-&-Kratzer-style:
+
 <a href="https://github.com/mkthalmann/TutorialNotes_HK/blob/master/recap.pdf">
 <p align="center">
-<img src="media/AS_semantik.jpg" width="250">
+<img src="media/AS_semantik.jpg" height="300">
 </p>
 </a>
+
+:::
+
+::::

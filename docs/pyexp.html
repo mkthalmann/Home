@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="https://github.com/mkthalmann/PyExp" />
 
 
-<title>PyExp</title>
+<title>PyExp — Linguistic Experiments using tkinter and Python 3</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -325,12 +326,170 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">PyExp</h1>
+<h1 class="title toc-ignore">PyExp — Linguistic Experiments using tkinter and Python 3</h1>
+<h4 class="author"><a href="https://github.com/mkthalmann/PyExp" class="uri">https://github.com/mkthalmann/PyExp</a></h4>
 
 </div>
 
 
-<p><a href="https://github.com/mkthalmann/PyExp" class="uri">https://github.com/mkthalmann/PyExp</a></p>
+<blockquote>
+<p>The following description is taken directly from the README of the associated Github page.</p>
+</blockquote>
+<p>This is one of my ongoing side projects: an experiment script with Python 3 using tkinter. The scope of this effort is fairly limited for now:</p>
+<ul>
+<li>have a fairly straight-forward structure with which to carry out linguistic experiments offline (in a lab setting with multiple computers, for example)
+<ul>
+<li>to achieve this, I made the choice to limit aesthetic flexibility in favor of a broad(-ish) coverage of important paradigms and minimal specification effort before the experiment is ready to go</li>
+</ul></li>
+<li>include these paradigms (for now):
+<ul>
+<li>linguistic judgments (Likert-style) of text and audio stimuli — the latter of which can either be present locally or streamed from online sources</li>
+<li>recording of reaction times (done automatically for all experiment types)</li>
+<li>forced choice (either dynamic or static) between images or text options</li>
+<li>self-paced-reading (either cumulative or static)</li>
+</ul></li>
+<li>ability to choose between the various paradigms and to specify the way the experiment is to be run (e.g., with or without a training portion) and what kind of data is to be collected (e.g., different meta-data fields)</li>
+</ul>
+<div id="what-it-looks-like" class="section level2">
+<h2>What It Looks Like</h2>
+<p align="center">
+<img src="https://github.com/mkthalmann/PyExp/blob/master/media/sample.jpg" width="532" height="278">
+</p>
+</div>
+<div id="getting-started" class="section level2">
+<h2>Getting Started</h2>
+<p>To run the experiment, simply adjust the settings in <code>config.yaml</code> (or any other yaml file of your choosing with the relevant settings) and add your item files to the mix before running <code>experiment.py</code>. The experiment should then run as specified (barring any code blunders on my part). Alternatively, if you just want to have a look at the way everything works and looks, you can simply run it as-is; a wide variety of exemplary item lists and items is provided (and used for testing purposes).</p>
+<pre class="python"><code>my_exp = Experiment(&quot;config.yaml&quot;)
+my_exp.start_experiment()</code></pre>
+</div>
+<div id="details" class="section level2">
+<h2>Details</h2>
+<p>In order to display the experiment, tkinter is used (unfortunately, so far, I have only tested this script on Mac OS, but I do hope that this should not be a problem), internal data handling and exporting is accomplished with pandas, while anything relating to audio files relies on pygame.</p>
+<p>Here are the first few lines of the results for a Forced Choice experiment, where the <code>finished</code>-column indicates whether the entire set of items was completed or not:</p>
+<table>
+<colgroup>
+<col width="12%" />
+<col width="8%" />
+<col width="8%" />
+<col width="4%" />
+<col width="2%" />
+<col width="4%" />
+<col width="6%" />
+<col width="4%" />
+<col width="5%" />
+<col width="3%" />
+<col width="3%" />
+<col width="6%" />
+<col width="10%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>id</th>
+<th>date</th>
+<th>start_time</th>
+<th>tester</th>
+<th>age</th>
+<th>gender</th>
+<th>language</th>
+<th>major</th>
+<th>sub_exp</th>
+<th>item</th>
+<th>cond</th>
+<th>judgment</th>
+<th>reaction_time</th>
+<th>finished</th>
+<th>feedback</th>
+<th>duration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>uuvvomdbmam9fzc</td>
+<td>04/03/2020</td>
+<td>11:46:54</td>
+<td>TEST</td>
+<td>99</td>
+<td>n/a</td>
+<td>python</td>
+<td>none</td>
+<td>1</td>
+<td>1</td>
+<td>a</td>
+<td>opt1</td>
+<td>1.48082</td>
+<td>F</td>
+<td>cool exp</td>
+<td>10.2</td>
+</tr>
+<tr class="even">
+<td>uuvvomdbmam9fzc</td>
+<td>04/03/2020</td>
+<td>11:46:54</td>
+<td>TEST</td>
+<td>99</td>
+<td>n/a</td>
+<td>python</td>
+<td>none</td>
+<td>1</td>
+<td>3</td>
+<td>b</td>
+<td>reject</td>
+<td>0.9502</td>
+<td>F</td>
+<td>cool exp</td>
+<td>10.2</td>
+</tr>
+<tr class="odd">
+<td>uuvvomdbmam9fzc</td>
+<td>04/03/2020</td>
+<td>11:46:54</td>
+<td>TEST</td>
+<td>99</td>
+<td>n/a</td>
+<td>python</td>
+<td>none</td>
+<td>1</td>
+<td>2</td>
+<td>a</td>
+<td>opt2</td>
+<td>0.88746</td>
+<td>F</td>
+<td>cool exp</td>
+<td>10.2</td>
+</tr>
+<tr class="even">
+<td>uuvvomdbmam9fzc</td>
+<td>04/03/2020</td>
+<td>11:46:54</td>
+<td>TEST</td>
+<td>99</td>
+<td>n/a</td>
+<td>python</td>
+<td>none</td>
+<td>1</td>
+<td>4</td>
+<td>b</td>
+<td>opt1</td>
+<td>1.14362</td>
+<td>F</td>
+<td>cool exp</td>
+<td>10.2</td>
+</tr>
+</tbody>
+</table>
+<p>As you can see, the results file is fairly dense and errs on the side of including too much information. I find this makes things easier in case unexpected circumstances occur or testing is done under non-ideal conditions (long stretch of time to test all participants; lots of different experimenters doing the testing, what have you).</p>
+</div>
+<div id="desiderata" class="section level2">
+<h2>Desiderata</h2>
+<p>Below is a list of features I would like to implement in the future. While it is no guarantee that this will actually happen, the following list is supposed to hold me (somewhat) accountable.</p>
+<ul>
+<li>support for video stimuli</li>
+<li>option to have several experimental blocks with a break in between</li>
+</ul>
+</div>
 
 
 

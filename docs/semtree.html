@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="https://github.com/mkthalmann/rule-and-type-parse" />
 
 
-<title>SemTree</title>
+<title>SemTree — Automatic Generation of Type-and-Rule-Annotated qtree Trees with Python</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -325,12 +326,40 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">SemTree</h1>
+<h1 class="title toc-ignore">SemTree — Automatic Generation of Type-and-Rule-Annotated qtree Trees with Python</h1>
+<h4 class="author"><a href="https://github.com/mkthalmann/rule-and-type-parse" class="uri">https://github.com/mkthalmann/rule-and-type-parse</a></h4>
 
 </div>
 
 
-<p><a href="https://github.com/mkthalmann/rule-and-type-parse" class="uri">https://github.com/mkthalmann/rule-and-type-parse</a></p>
+<blockquote>
+<p>The following description is taken directly from the README of the associated Github page.</p>
+</blockquote>
+<p>This script is a very simple program that parses LaTeX <a href="https://ctan.org/pkg/tikz-qtree?lang=en">TikZ qtree</a><sup id="a1"><a href="#f1">1</a></sup> strings and outputs the same tree annotated with semantic types and the rules of composition (Heim-&amp;-Kratzer-style) that led to that type. Being simple, the script comes with a number of restrictions some of which I’ll detail below.</p>
+<p>As an aside, my implementation is the offspring of a desire to program, rather than one to innovate. There are certainly better and more thought-out alternatives around.</p>
+<p><b id="f1">1</b> For TikZ itself, see <a href="https://www.ctan.org/pkg/pgf" class="uri">https://www.ctan.org/pkg/pgf</a>. <a href="#a1">↩︎</a></p>
+<div id="getting-started" class="section level2">
+<h2>Getting Started</h2>
+<pre class="python"><code># lexicon that includes the semantic types
+lex = {&quot;e&quot;: [&quot;Andrew&quot;, &quot;Mathis&quot;], &quot;&lt;e, t&gt;&quot;: [&quot;hits&quot;]}
+
+# define the tree that is to be annotated
+tree_string = &quot;[.\\node(top){S }; [.NP^1 [.N^1 Andrew ] ] [.VP [.V hits ] [.NP^2 [.N^2 Mathis ] ] ] ]&quot;
+
+# save the output to a LaTeX file
+with open(&quot;LaTeX/treeparses.tex&quot;, &quot;w&quot;) as f:
+    f.write(tree_to_latex(tree_string, lex))</code></pre>
+</div>
+<div id="examples" class="section level2">
+<h2>Examples</h2>
+<p>The input string in (1) produces the output below (once the corresponding (Xe)LaTeX code is compiled to pdf).</p>
+<ol style="list-style-type: decimal">
+<li><code>[.\\node(top){S }; [.NP^1 [.N^1 Andrew ] ] [.VP [.V hits ] [.NP^2 [.N^2 Mathis ] ] ] ]</code></li>
+</ol>
+<p align="center">
+<img src="https://github.com/mkthalmann/semantics/blob/master/media/sample.jpg" width="448" height="490">
+</p>
+</div>
 
 
 

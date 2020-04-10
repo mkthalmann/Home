@@ -2,4 +2,27 @@
 title: "My Website"
 ---
 
-Stuff about my website.
+:::: {style="display: flex;"}
+
+::: {.column width="65%"}
+
+This website mainly serves a two-fold purpose:
+
+1. It acts as a convenient interface with many of my Github projects and groups them in a more palatable manner than is possible using Github alone.
+2. Due to this bundling, I use it as a comprehensive CV that links to the various items; see the `Research` and `Teaching` tabs.
+
+All content was generated using [R-Markdown](https://rmarkdown.rstudio.com).
+
+:::
+
+::: {.column width="15%"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.column width="20%"}
+![](media/me.jpeg)
+:::
+
+::::
