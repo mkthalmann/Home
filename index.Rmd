@@ -33,7 +33,7 @@ a column separator -->
 :::
 
 ::: {.column width="20%"}
-![](media/images/me.jpeg)
+![](media/images/me.png)
 :::
 
 ::::
