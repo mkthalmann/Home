@@ -1,0 +1,9 @@
+---
+title: "Templates"
+---
+
+This list features my personal pandoc LaTeX templates for use with RMarkdown. All are simply customised (and in part more restrictive) versions of the standard templates provided by [Pandoc](https://pandoc.org).
+
+1. https://github.com/mkthalmann/book
+1. https://github.com/mkthalmann/presentation
+<!-- 1. https://github.com/mkthalmann/register-study -->

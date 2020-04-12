@@ -1,10 +1,8 @@
 ---
-title: "Teaching"
+title: "Teaching Materials"
 ---
 
-## Teaching Materials
-
-### Available Online
+## Available Online
 
 :::: {style="display: flex;"}
 
@@ -49,7 +47,7 @@ a column separator -->
 
 <br><br>
 
-### Available Upon Request
+## Available Upon Request
 
 :::: {style="display: flex;"}
 

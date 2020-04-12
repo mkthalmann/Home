@@ -17,6 +17,11 @@ navbar:
           href: pyexp.html
         - text: "SemTree"
           href: semtree.html
+        - text: "---------"
+        - text: "Pandoc Templates"
+        - text: "Templates"
+          href: templates.html
+
   right:
     - text: E-Mail
       icon: fa-envelope
