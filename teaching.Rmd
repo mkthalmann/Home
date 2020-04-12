@@ -29,7 +29,7 @@ a column separator -->
 
 Linguistic Semantics:
 
-<a href="https://github.com/mkthalmann/TutorialNotes_HK/blob/master/recap.pdf">
+<a href="https://github.com/mkthalmann/home/tree/master/media/teaching/AS_semantik.pdf">
 <p align="center">
 <img src="media/images/AS_semantik.jpg" width="200">
 </p>
