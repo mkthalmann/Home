@@ -1,6 +1,8 @@
 ---
-title: "Teaching Materials"
+title: "Teaching"
 ---
+
+## Teaching Materials
 
 ### Available Online
 
@@ -78,3 +80,12 @@ Experiment Design and Stats:
 :::
 
 ::::
+
+## All Classes Taught
+
+Below is a list of the classes I have taught over the years (all in Göttingen, Germany), sorted from newest to oldest.
+
+1. Lab Class: Inferential Statistics (Using R); 2019--2020 (1 term)
+1. Lab Class: Descriptive Statistics (Using R); 2018--2019 (2 terms)
+1. Lab Class: Syntax-Semantics-Interface (alternating between semantics and syntax every term); 2017--2019 (5 terms)
+1. Lab Class: Introduction to Linguistics 1 and 2; 2015--2018 (6 terms)
