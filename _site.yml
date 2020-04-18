@@ -1,7 +1,8 @@
 name: "my-website"
 output_dir: "docs"
+description: "Maik Thalmann's personal website. Research and teaching materials in experimental linguistics, focusing on semantics, pragmatics, and their interface."
 navbar:
-  title: "Maik Thalmann"
+  title: "Homepage"
   left:
     - text: "Home"
       href: index.html
