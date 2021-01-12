@@ -23,6 +23,6 @@ Below is a list with links to my talks, posters, and papers, with each group bei
 
 ### Papers (Preprint)
 
-<!-- 1. Thalmann, Chen, Müller, Paluch & Antomo (*submitted*): [Against PCI-GCI uniformity. Evidence from deceptive language in German and Chinese.](media/papers/LB_Thalmann:Chen:Müller:Paluch:Antomo.pdf) Linguistische Berichte. -->
+1. Thalmann, Chen, Müller, Paluch & Antomo (*accepted*): [Against PCI-GCI uniformity. Evidence from deceptive language in German and Chinese.](media/papers/PCI_GCI_2021_preprint.pdf) Linguistische Berichte.
 1. Thalmann, Maik & Panizza, Daniele (2019): [Present to the Eye, Away from the Mind. Dissociating Online Comprehension and Offline Judgments of Indirect Scalar Inferences.](http://www.lingref.com/bucld/43/BUCLD43-52.pdf) Proceedings of BUCLD 43.
 1. Antomo, Mailin; Chen, Yuqiu; Müller, Susanne; Paul, Katharina; Paluch, Markus & Thalmann, Maik (2018): [When children aren't more logical than adults. An empirical investigation of lying by falsely implicating.](https://doi.org/10.1016/j.pragma.2018.09.010) Journal of Pragmatics.

@@ -13,6 +13,7 @@
 
 <title>Research Output</title>
 
+<script src="site_libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -22,9 +23,20 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <meta name="google-site-verification" content="4YN--spDdRtWRlx9s4De0613X6GmQXMwugLBKiu_W44" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -360,8 +372,8 @@ $(document).ready(function () {
 </div>
 <div id="papers-preprint" class="section level3">
 <h3>Papers (Preprint)</h3>
-<!-- 1. Thalmann, Chen, Müller, Paluch & Antomo (*submitted*): [Against PCI-GCI uniformity. Evidence from deceptive language in German and Chinese.](media/papers/LB_Thalmann:Chen:Müller:Paluch:Antomo.pdf) Linguistische Berichte. -->
 <ol style="list-style-type: decimal">
+<li>Thalmann, Chen, Müller, Paluch &amp; Antomo (<em>accepted</em>): <a href="media/papers/PCI_GCI_2021_preprint.pdf">Against PCI-GCI uniformity. Evidence from deceptive language in German and Chinese.</a> Linguistische Berichte.</li>
 <li>Thalmann, Maik &amp; Panizza, Daniele (2019): <a href="http://www.lingref.com/bucld/43/BUCLD43-52.pdf">Present to the Eye, Away from the Mind. Dissociating Online Comprehension and Offline Judgments of Indirect Scalar Inferences.</a> Proceedings of BUCLD 43.</li>
 <li>Antomo, Mailin; Chen, Yuqiu; Müller, Susanne; Paul, Katharina; Paluch, Markus &amp; Thalmann, Maik (2018): <a href="https://doi.org/10.1016/j.pragma.2018.09.010">When children aren’t more logical than adults. An empirical investigation of lying by falsely implicating.</a> Journal of Pragmatics.</li>
 </ol>
@@ -377,7 +389,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

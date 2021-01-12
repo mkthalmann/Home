@@ -2,3 +2,5 @@
 .DS_Store
 .Rproj
 index_files
+*.txt
+.Rhistory
