@@ -38,4 +38,4 @@ output:
     theme: cosmo
     highlight: textmate
     includes:
-       in_header: myheader.html
+      in_header: myheader.html

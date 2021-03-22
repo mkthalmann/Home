@@ -24,6 +24,8 @@ This website mainly serves a two-fold purpose:
 
 All content was generated using [R-Markdown](https://rmarkdown.rstudio.com).
 
+I use [*he/him*](http://pronoun.is/he) pronouns.
+
 :::
 
 ::: {.column width="15%"}
@@ -37,4 +39,3 @@ a column separator -->
 :::
 
 ::::
-
